@@ -1,7 +1,9 @@
 import React from "react";
 
 const index = () => {
-  return <div>ShopeeMall</div>;
+  return (
+    <div>Shopee Mall</div>
+  );
 };
 
 export default index;
