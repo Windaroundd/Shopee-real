@@ -5,11 +5,13 @@ import FlashSale from "../../components/FlashSale";
 import ShopeeMall from "../../components/ShopeeMall";
 import TopItem from "../../components/TopItem";
 import TodaySuggest from "../../components/TodaySuggest";
+import Slider from "../../components/Swiper/Swiper";
 
 const index = () => {
   return (
     <div>
       <Banner />
+      <Slider />
       <Category />
       <FlashSale />
       <ShopeeMall />
