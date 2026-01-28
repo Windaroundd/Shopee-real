@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
+import WithAuth from "./HOC/withAuth";
 
 const useRouteElements = () => {
   const routeElements = useRoutes([
@@ -19,7 +20,7 @@ const useRouteElements = () => {
         },
         {
           path: "/cart",
-          element: <Cart />,
+          element: <WithAuth><Cart /></WithAuth>,
         },
       ],
     },
